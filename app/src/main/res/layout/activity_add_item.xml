@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemActivity">
+
+    <EditText
+        android:id="@+id/nametxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/carname"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/modeltxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/carmodel"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/nametxt"
+        app:layout_constraintStart_toStartOf="@+id/nametxt"
+        app:layout_constraintTop_toBottomOf="@+id/nametxt" />
+
+    <EditText
+        android:id="@+id/pricetxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/carprice"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/brandtxt"
+        app:layout_constraintStart_toStartOf="@+id/brandtxt"
+        app:layout_constraintTop_toBottomOf="@+id/brandtxt" />
+
+    <EditText
+        android:id="@+id/countrytxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/carcountry"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/pricetxt"
+        app:layout_constraintStart_toStartOf="@+id/pricetxt"
+        app:layout_constraintTop_toBottomOf="@+id/pricetxt" />
+
+    <EditText
+        android:id="@+id/brandtxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/carbrand"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/modeltxt"
+        app:layout_constraintStart_toStartOf="@+id/modeltxt"
+        app:layout_constraintTop_toBottomOf="@+id/modeltxt" />
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#00B0FF"
+        android:text="@string/add"
+        app:layout_constraintEnd_toEndOf="@+id/countrytxt"
+        app:layout_constraintTop_toBottomOf="@+id/countrytxt" />
+
+    <Button
+        android:id="@+id/cancelbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="@android:string/cancel"
+        app:layout_constraintEnd_toStartOf="@+id/addbtn"
+        app:layout_constraintTop_toTopOf="@+id/addbtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
